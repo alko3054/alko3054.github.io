@@ -1,0 +1,111 @@
+<html>
+	
+	<head>
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+<link rel="stylesheet" href="phone.css">
+
+<!--- Note: I completed this assignment when I briefly took this class before. I used my previous work as a guide, but this is not an identical submission. 
+	Additional CSS styling information from W3Schools https://www.w3schools.com/cssref/ 
+	
+	Placeholder Photo: https://commons.wikimedia.org/wiki/File:Portrait_Placeholder.png --->
+	
+<title>Dialer</title>
+	</head>
+
+<body>
+
+<div class="UI" id="tab_bar" role="navigation">
+<button class="UIbuttons" id="numtab" tabindex='1'>Dialer</button>
+<button class="UIbuttons" id="contacttab" tabindex='2'>Contact List</button>
+<button class="UIbuttons" id="addtab" tabindex='3'>Add Contact</button>
+<button class="UIbuttons" id="helptab" tabindex='4'>About</button>
+</div>
+
+<div class="UI" id="content" role="main">
+
+
+<div class="UI" id="content_dialer" role="main">
+<h1>Dialer</h1>
+	
+	<p>
+	<form>
+  <input class ="number" type="number" id="numfield" maxlength="10" readonly="true" placeholder="#">
+	</form>	
+	</p>
+
+	<p>
+	
+	<br>
+<button class="dialer" id="1" value="1">1</button><button class="dialer" id="2" value="2">2</button><button class="dialer" id="3" value="3">3</button>
+	
+	<br>
+<button class="dialer" id="4" value="4">4</button><button class="dialer" id="5" value="5">5</button><button class="dialer" id="6" value="6">6</button>
+
+	<br>
+<button class="dialer" id="7" value="7">7</button><button class="dialer" id="8" value="8">8</button><button class="dialer" id="9" value="9">9</button>
+
+	<br>
+<button class="dialer" id="asterisk" value="*">*</button><button class="dialer" id="0" value="0">0</button><button class="dialer" id="pound" value="#">#</button>
+
+	<br>
+<button class="dialer" id="dial">Dial</button><button class="dialer" id="clear" value="">Clear</button>
+
+	</p>
+</div>
+
+
+<div class="UI" id="content_contactlist" role="main">
+<h1>Contact List</h1>
+	<table style="width:100%">
+  <tr>
+    <th>Name</th>
+	<th>Photo</th>
+  </tr>
+  <tr>
+    <td align="center">John Doe</td>
+	<td align="center"> <img src="Portrait_Placeholder.png" alt="Photo of John" style="width:50px;height:50px;"></td>
+  </tr>
+  <tr>
+	<td align="center">Jane Doe</td>
+    <td align="center"> <img src="Portrait_Placeholder.png" alt="Photo of Jane" style="width:50px;height:50px;"></td>
+  </tr>
+  </table>
+</div>
+
+
+<div class="UI" id="content_addcontact" role="main">
+<h1>Add Contact</h1>
+	<p>
+	<form class="contactinfo" id="contactname">
+  <input placeholder="Contact Name">
+	</form>	
+	<br>
+	<form class="contactinfo" id="contactemail">
+  <input placeholder="Contact E-mail">
+	</form>	
+	<br>
+	<form class="contactinfo" id="contactname">
+  <input placeholder="Phone Number">
+	</form>	
+	<br>
+	<button class="contactbutton" id="submit">Add</button><button class="contactbutton" id="clearcontact">Clear</button>
+	</p>
+</div>
+
+<div class="UI" id="content_help" role="main">
+<h1>About</h1>
+	<p>
+	Navigate via "tab" key.
+	</p>
+	
+</div>
+
+</div> <!-- content -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="phone.js"></script>
+
+</body>
+</html>
+
+
